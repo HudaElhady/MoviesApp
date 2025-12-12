@@ -222,7 +222,7 @@ extension Movie {
             overview: "Mock overview",
             posterPath: "/mock.jpg",
             backdropPath: "/backdrop.jpg",
-            releaseDate: "2024-01-01",
+            releaseDate: "2025-12-12",
             genreIds: genreIds,
             voteAverage: 7.5
         )
