@@ -13,12 +13,10 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
-// MARK: - Network Client Protocol
 public protocol NetworkClientProtocol {
     func request<T: Decodable>(_ endpoint: Endpoint) async throws -> T
 }
 
-// MARK: - Network Client
 public final class NetworkClient: NetworkClientProtocol {
     private let session: URLSession
     private let decoder: JSONDecoder

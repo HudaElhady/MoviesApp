@@ -14,14 +14,7 @@ protocol MovieDetailsViewModelProtocol {
 
 extension MovieDetailsViewModel {
     class Input: ObservableObject {
-//        @Published public var searchText: String = ""
-//
         var retryButtonTrigger = PassthroughSubject<Void, Never>()
-        
-//        var movieCardAppearTrigger = PassthroughSubject<Movie, Never>()
-//        var selectMovieTrigger = PassthroughSubject<Movie, Never>()
-//        var selectGenresTrigger = PassthroughSubject<Genre, Never>()
-//        var clearFilterButtonTrigger = PassthroughSubject<Void, Never>()
     }
 }
 

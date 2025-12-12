@@ -56,11 +56,7 @@ public enum MovieEndpoint: Endpoint {
 public struct MovieEndpointConfig {
     public static let apiKey = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZTA1ZWUxZGM0ZDJjNzg3NzY1MGU4NzJmNTcwYTdiMSIsIm5iZiI6MTUzMDA0MjQ1MS42Nywic3ViIjoiNWIzMjk4NTNjM2EzNjg1MzIwMDBmOTFkIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.Isvbq8QH8Zp6FNjitOBTS8cU9W5_eO2EQ6jqBMqt3E8"
     public static let imageBaseURL = "https://image.tmdb.org/t/p/"
-    
-//    public enum ImageSize: String {
-//        case w92, w154, w185, w342, w500, w780, original
-//    }
-    
+
     public static func posterURL(path: String) -> URL? {
         URL(string: imageBaseURL + "w500" + path)
     }
